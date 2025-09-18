@@ -1,0 +1,44 @@
+# Add VIK configuration here (e.g. VIK_PMW3360_RIGHT=yes to use a trackball)
+VIA_ENABLE = yes
+VIAL_ENABLE = yes
+VIAL_INSECURE = yes
+
+VIK_ENABLE = yes
+
+# SPLIT_KEYBOARD = yes
+
+include $(KEYBOARD_PATH_1)/vik/rules.mk
+
+VIK_PMW3389_RIGHT=yes
+
+# SERIAL_DRIVER = vendor
+AUDIO_SUPPORTED = no
+
+VIA_ENABLE = no
+LTO_ENABLE = yes
+ENCODER_MAP_ENABLE = no
+# CONSOLE_ENABLE = yes
+KEYMAP_OVERLAY_ENABLE = yes
+
+LAYER_LOCK_ENABLE = yes
+CAPS_WORD_ENABLE = yes
+COMMAND_ENABLE = no
+
+# RGB_MATRIX_ENABLE = no
+# RGB_MATRIX_SUPPORTED = no
+# RGBLIGHT_SUPPORTED = no
+
+# BOOTMAGIC_ENABLE = yes
+EXTRAKEY_ENABLE = yes
+
+# Trackball
+POINTING_DEVICE_ENABLE = yes
+POINTING_DEVICE_DRIVER = pmw3389 # Change to pmw3360 if you use that
+SPLIT_POINTING_ENABLE = yes
+
+# Encoder
+ENCODER_ENABLE = no
+ENCODER_MAP_ENABLE = no
+
+AUTO_SHIFT_ENABLE = no
+
